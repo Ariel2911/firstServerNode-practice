@@ -4,6 +4,9 @@ const path = require("path"); // Se utiliza para normalizar las rutas de los sis
 
 const app = express();
 
+app.set("view engine", "pug");
+app.set("views", path.join(__dirname,"views"));
+
 app.use(routes);
 
 app.use(express.static(path.join(__dirname, "../public")))
