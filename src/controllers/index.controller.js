@@ -1,8 +1,8 @@
 const controller = {};
 
-const title = "Bienvenidos a mi servidor"
-
 controller.index = (req, res) => {
+
+  const title = "Bienvenidos a mi servidor";
 
   res.render("index",{ title });
   
