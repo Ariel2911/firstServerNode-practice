@@ -3,6 +3,7 @@ const routes = require("./routes/index.routes");
 const path = require("path"); // Se utiliza para normalizar las rutas de los sistemas operativos
 
 const app = express();
+const PORT = process.env.PORT || 3000
 
 app.set("view engine", "pug");// Configura el motor de vistas
 app.set("views", path.join(__dirname,"views"));// Configura el directorio donde buscara las vistas
@@ -21,5 +22,5 @@ app.use((req, res) => {
 });
 
 // app queda a la espera de conexiones
-app.listen(3000, () => console.log("Servidor a la espera de conexiones en el puerto 3000"));
+app.listen(PORT, () => console.log(`Servidor a la espera de conexiones en el puerto ${PORT}`));
 
