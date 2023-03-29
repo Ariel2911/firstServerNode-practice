@@ -1,19 +1,21 @@
-//- html
-//-   head
-//-     title= title
-//-   body
-//-     h1= message
-
 doctype html
 html(lang="es")
   head
     meta(charset="UTF-8")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="css/styles.css")
     title Document
   body 
-    h1= title 
-    h2 Mapa del sitio 
+    h1.title= title  
+
+    p.text Este sitio web informativo habla sobre temas relacionados con el backend. Es un proyecto cuyo objetivo es comenzar a explorar el área del backend, donde también iré almacenando los conocimientos adquiridos.
+
+    p Estado: en construción.
+
+    h2 Temas
+
     ul 
-      li 
-        a ¿Qué es NODE?
+      each name, link in pages 
+        li.item
+          a(href=link).link= name

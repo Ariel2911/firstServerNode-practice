@@ -13,6 +13,9 @@ body{
   text-align: center;
 }
 
+.text{
+  line-height: 2rem;
+}
 
 .item{
   margin: 0.5rem;

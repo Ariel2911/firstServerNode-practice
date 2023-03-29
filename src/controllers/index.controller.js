@@ -2,9 +2,15 @@ const controller = {};
 
 controller.index = (req, res) => {
 
-  const title = "Bienvenidos a mi servidor";
+  const title = "Bienvenidos";
+  const pages = {
+    "/node": "NODE.JS",
+    "/express":"EXPRESS",
+    "/pug":"PUG",
+    "/licencias":"Licencias"
+  }
 
-  res.render("index",{ title });
+  res.render("index",{ title, pages });
   
 };
 
