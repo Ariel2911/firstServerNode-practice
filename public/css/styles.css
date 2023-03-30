@@ -14,6 +14,7 @@ body{
 }
 
 .text{
+  max-width: 1024px;
   line-height: 2rem;
 }
 
@@ -27,16 +28,16 @@ body{
 }
 
 .title-404{
-  font-size: 10rem;
+  font-size: 8rem;
   margin: 0;
 }
 
 .text-404{
-  font-size: 4rem;
+  font-size: 2.5rem;
   margin: 0;
 }
 
 .link-404{
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   color: #888;
 }
