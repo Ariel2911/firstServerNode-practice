@@ -11,9 +11,11 @@ body{
 
 .title{
   text-align: center;
+  color: #3dc637;
 }
 
 .text{
+  width: 100%;
   max-width: 1024px;
   line-height: 2rem;
 }
@@ -24,7 +26,7 @@ body{
 
 .link{
   margin: 0.5rem;
-  color: darkslateblue;
+  color: #1497cf;
 }
 
 .title-404{
@@ -39,5 +41,4 @@ body{
 
 .link-404{
   font-size: 1.25rem;
-  color: #888;
 }
