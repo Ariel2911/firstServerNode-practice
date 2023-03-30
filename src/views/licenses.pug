@@ -7,6 +7,12 @@ html(lang="en")
     link(rel="stylesheet", href="css/styles.css")
     title Licencias
   body 
+    p.text
+      a(href=home).link Home 
+      each link in path 
+        if link!=="" 
+          a(href=link).link= `/${link}` 
+          
     h1.title Licencias
 
     h2 ¿Por qué es importante una licencia?

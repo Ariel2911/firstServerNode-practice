@@ -7,6 +7,12 @@ html(lang="en")
     link(rel="stylesheet", href="css/styles.css")
     title node
   body 
+    p.text
+      a(href=home).link Home 
+      each link in path 
+        if link!=="" 
+          a(href=link).link= `/${link}` 
+
     h1.title NODE.JS
 
     p.text Node.js es un entorno de tiempo de ejecución de JavaScript que permite a los desarrolladores construir aplicaciones de servidor escalables y de alto rendimiento utilizando JavaScript en el lado del servidor. Node.js utiliza el motor V8 de Google Chrome para ejecutar JavaScript fuera del navegador.

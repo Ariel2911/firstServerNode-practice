@@ -7,6 +7,12 @@ html(lang="en")
     link(rel="stylesheet", href="css/styles.css")
     title Pug
   body 
+    p.text
+      a(href=home).link Home 
+      each link in path 
+        if link!=="" 
+          a(href=link).link= `/${link}` 
+          
     h1.title PUG
 
     p.text Es un motor de plantilla de Node.js. con el que seremos capaces de escribir código HTML de una sintaxis mucho más sencilla, clara y directa, tanto a la hora de escribir como de leer y modificar. Es implementado con JavaScript para Node.js y navegadores. La sintaxis de pug se basa en trabajar por indentación como Python lo hace y antes era conocido como Jade.

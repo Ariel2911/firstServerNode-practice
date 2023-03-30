@@ -1,5 +1,7 @@
 const controller = {};
 
+const home = "/"
+
 controller.index = (req, res) => {
 
   const title = "Bienvenidos";
@@ -9,26 +11,42 @@ controller.index = (req, res) => {
     "/express":"EXPRESS",
     "/pug":"PUG",
     "/licencias":"Licencias"
-  }
+  };
 
-  res.render("index",{ title, pages });
+  res.render("index",{ title, pages, home });
   
 };
 
 controller.node = (req,res) => {
-  res.render("node")
+
+  const path = req.path.split("/");
+
+  res.render("node", { home, path });
+
 };
 
 controller.express = (req,res) => {
-  res.render("express")
+
+  const path = req.path.split("/");
+
+  res.render("express", { home, path });
+
 };
 
 controller.pug = (req,res) => {
-  res.render("pug")
+
+  const path = req.path.split("/");
+
+  res.render("pug", { home, path });
+
 };
 
 controller.licenses = (req,res) => {
-  res.render("licenses")
-}
+
+  const path = req.path.split("/");
+
+  res.render("licenses", { home, path });
+
+};
 
 module.exports = controller;

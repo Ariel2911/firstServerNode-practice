@@ -7,6 +7,12 @@ html(lang="en")
     link(rel="stylesheet", href="css/styles.css")
     title Express
   body 
+    p.text
+      a(href=home).link Home 
+      each link in path 
+        if link!=="" 
+          a(href=link).link= `/${link}` 
+          
     h1.title EXPRESS
 
     p.text Es el framework web más popular de Node, y es la librería subyacente para un gran número de otros frameworks web de Node populares. Proporciona mecanismos para:
