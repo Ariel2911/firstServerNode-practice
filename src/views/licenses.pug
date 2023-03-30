@@ -8,3 +8,38 @@ html(lang="en")
     title Licencias
   body 
     h1.title Licencias
+
+    h2 ¿Por qué es importante una licencia?
+
+    p.text Cuando se realiza un trabajo creativo ( como escritura, gráficos o código ), ese trabajo está bajo derechos de autor exclusivos de forma predeterminada. Es decir, la ley asume que, como autor de su trabajo, tiene derecho a decidir sobre lo que otros pueden hacer con él.
+
+    p.text En general, eso significa que nadie más puede usar, copiar, distribuir o modificar su trabajo sin correr el riesgo de sufrir litigios.
+
+    p.text Sin embargo, el código abierto es una circunstancia inusual, porque el autor espera que otros usen, modifiquen y compartan su trabajo. Pero debido a que el incumplimiento legal sigue siendo un derecho de autor exclusivo, necesita una licencia que establezca explícitamente estos permisos.
+
+    p.text Si no aplica una licencia de código abierto, todos los que contribuyen a su proyecto también se convierten en titulares exclusivos de sus derechos de autor. Eso significa que nadie puede usar, copiar, distribuir o modificar sus contribuciones y “ nadie ” lo incluye al autor del proyecto.
+
+    p.text Ademas, su proyecto puede tener dependencias con requisitos de licencia que no conocía. La comunidad de su proyecto, o las políticas de su empleador, también pueden requerir que su proyecto use licencias específicas de código abierto.
+
+    h2 Licencias de código abierto
+
+    p.text MIT, Apache 2.0, y GPLv3 son las licencias de código abierto más populares, pero hay otras opciones para elegir.
+
+    p.text Elegir la licencia de código abierto adecuada para su proyecto depende de sus objetivos.
+
+    p.text Es muy probable que su proyecto tenga dependencias. Por ejemplo, si está abriendo un proyecto Node.js, probablemente usará bibliotecas del Node Package Manager ( npm ). Cada una de esas bibliotecas de las que depende tendrá su propia licencia de código abierto. Si cada una de sus licencias es “ permisiva ” ( le da permiso público para usar, modificar y compartir, sin ninguna condición para la licencia posterior ), puede usar cualquier licencia que desee. Las licencias permisivas comunes incluyen MIT, Apache 2.0, ISC y BSD.
+
+    p.text Por otro lado, si en alguna de sus dependencias las licencias son “ copyleft fuerte ” ( también otorga al público los mismos permisos, sujeto a la condición de usar la misma licencia aguas abajo ), entonces su proyecto tendrá que usar la misma licencia. Las licencias comunes de copyleft fuertes incluyen GPLv2, GPLv3 y AGPLv3.
+
+    p.text También puede considerar a las comunidades que se espera que utilicen y contribuyan al proyecto:
+
+    ul 
+      li.item.text ¿Desea que su proyecto sea utilizado como dependencia por otros proyectos? Probablemente sea mejor usar la licencia más popular en su comunidad relevante. Por ejemplo, #[a(href="https://choosealicense.com/licenses/mit/").link MIT] es la licencia más popular para #[a(href="https://libraries.io/search?platforms=NPM").link bibliotecas npm].
+
+      li.item.text ¿Desea que su proyecto atraiga a las grandes empresas? Una gran empresa probablemente querrá una licencia de patente expresa de todos los contribuyentes. En este caso, #[a(href="https://choosealicense.com/licenses/apache-2.0/").link Apache 2.0] tiene usted ( y ellos ) cubiertos.
+
+      li.item.text ¿Desea que su proyecto atraiga a los contribuyentes que no desean que sus contribuciones se utilicen en software de código cerrado? #[a(href="https://choosealicense.com/licenses/gpl-3.0/").link GPLv3] o ( si tampoco desean contribuir a servicios de código cerrado ) #[a(href="https://choosealicense.com/licenses/agpl-3.0/").link AGPLv3] irá bien.
+
+    p.text Puede encontrar más información sobre licencias e instrucciones sobre cómo usarlas, en #[a(href="https://choosealicense.com/").link selectalicense.com].
+
+    p.text Fuente: #[a(href="https://opensource.guide/").link opensource.guide/]
